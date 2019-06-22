@@ -13,6 +13,9 @@
 		F45D036322BA806B004265FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45D036222BA806B004265FF /* Assets.xcassets */; };
 		F45D036622BA806B004265FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45D036522BA806B004265FF /* Preview Assets.xcassets */; };
 		F45D036922BA806B004265FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45D036722BA806B004265FF /* LaunchScreen.storyboard */; };
+		F45D037522BA96A7004265FF /* GOTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45D037422BA96A7004265FF /* GOTUser.swift */; };
+		F45D037822BB809A004265FF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45D037722BB809A004265FF /* CircleImage.swift */; };
+		F45D037A22BB90BD004265FF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45D037922BB90BD004265FF /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F45D036522BA806B004265FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F45D036822BA806B004265FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45D036A22BA806B004265FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45D037422BA96A7004265FF /* GOTUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTUser.swift; sourceTree = "<group>"; };
+		F45D037722BB809A004265FF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		F45D037922BB90BD004265FF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		F45D035B22BA8067004265FF /* ListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F45D037622BB808C004265FF /* View */,
+				F45D037122BA9427004265FF /* Model */,
 				F45D035C22BA8067004265FF /* AppDelegate.swift */,
 				F45D035E22BA8067004265FF /* SceneDelegate.swift */,
 				F45D036022BA8067004265FF /* ContentView.swift */,
@@ -73,6 +81,23 @@
 				F45D036522BA806B004265FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F45D037122BA9427004265FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F45D037422BA96A7004265FF /* GOTUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F45D037622BB808C004265FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F45D037722BB809A004265FF /* CircleImage.swift */,
+				F45D037922BB90BD004265FF /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45D035D22BA8067004265FF /* AppDelegate.swift in Sources */,
+				F45D037A22BB90BD004265FF /* DetailView.swift in Sources */,
+				F45D037522BA96A7004265FF /* GOTUser.swift in Sources */,
 				F45D035F22BA8067004265FF /* SceneDelegate.swift in Sources */,
 				F45D036122BA8067004265FF /* ContentView.swift in Sources */,
+				F45D037822BB809A004265FF /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "ListSwiftUI/Preview\\ Content";
-				DEVELOPMENT_TEAM = P5RBZW84K8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ListSwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "ListSwiftUI/Preview\\ Content";
-				DEVELOPMENT_TEAM = P5RBZW84K8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ListSwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
